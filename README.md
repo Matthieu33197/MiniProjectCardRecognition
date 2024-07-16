@@ -1,6 +1,6 @@
 # Card Recognition with Convolutional Neural Networks (CNN)
 
-<img src="./public/img.png" alt="Logo" width="300" height="100">
+<img src="./public/img.png" alt="Logo" width="100%">
 
 ## Description
 
@@ -8,12 +8,12 @@ Ce projet utilise un réseau de neurones convolutionnel (CNN) pour la reconnaiss
 
 ## Structure du projet
 
-├── train/ # Dossier contenant les images d'entraînement
-├── valid/ # Dossier contenant les images de validation
-├── test/ # Dossier contenant les images de test
-├── card_recognition_model.h5 # Modèle sauvegardé après entraînement, si sauvegardé
-├── cardReader.py # Script principal pour la reconnaissance de cartes
-└── README.md # Ce fichier
+- train/ # Dossier contenant les images d'entraînement
+- valid/ # Dossier contenant les images de validation
+- test/ # Dossier contenant les images de test
+- card_recognition_model.h5 # Modèle sauvegardé après entraînement, si sauvegardé
+- cardReader.py # Script principal pour la reconnaissance de cartes
+- README.md # Ce fichier
 
 
 ## Prérequis
