@@ -22,7 +22,6 @@ Ce projet utilise un réseau de neurones convolutionnel (CNN) pour la reconnaiss
 - TensorFlow 2.x
 - Keras
 - Pillow
-- OpenCV
 - Tkinter
 
 ## Installation
