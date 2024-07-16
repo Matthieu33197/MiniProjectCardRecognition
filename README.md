@@ -35,7 +35,7 @@ Ce projet utilise un réseau de neurones convolutionnel (CNN) pour la reconnaiss
 
 2. Installez les dépendances requises :
     ```bash
-    pip install tensorflow pillow opencv-python-headless
+    pip3 install tensorflow pillow opencv-python-headless
     ```
 
 ## Utilisation
