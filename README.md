@@ -4,7 +4,7 @@
 
 ## Description
 
-Ce projet utilise un réseau de neurones convolutionnel (CNN) pour la reconnaissance de cartes à jouer à partir d'images. Le modèle est entraîné à l'aide de Keras et TensorFlow et l'interface utilisateur est construite avec Tkinter. L'application permet de sélectionner une image à partir de votre système de fichiers et d'obtenir une prédiction sur la carte affichée dans l'image.
+Ce projet utilise un réseau de neurones convolutionnel (CNN) pour la reconnaissance de cartes à jouer à partir d'images. Le modèle est entraîné à l'aide de Keras et TensorFlow et l'interface utilisateur est construite avec Tkinter. L'application permet de sélectionner une image à partir de votre système et d'obtenir une prédiction de la carte affichée dans l'image.
 
 ## Structure du projet
 
