@@ -2,6 +2,8 @@ import os
 import numpy as np
 import tensorflow as tf
 import keras as ks
+from tkinter import Tk, Label, Button, filedialog
+from PIL import Image, ImageTk
 from keras.src.legacy.preprocessing.image import ImageDataGenerator
 from keras.src.models import Sequential
 from keras.src.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
@@ -74,3 +76,30 @@ else:
 
     # Enregistrer le modèle
     model.save(model_path)
+
+
+# Prédiction d'une image sélectionné
+def image_normalizer(image_path):
+    img = Image.open(image_path).resize((IMG_SIZE, IMG_SIZE), Image.LANCZOS)
+    img_array = np.array(img) / 255.0
+    return np.expand_dims(img_array, axis=0)
+
+def predict_image():
+    file_path = filedialog.askopenfilename()
+    if file_path:
+        print(f"Image sélectionnée : {file_path}")
+        preprocessed_image = image_normalizer(file_path)
+        prediction = model.predict(preprocessed_image)
+        class_index = np.argmax(prediction)
+        card_name = list(train_generator.class_indices.keys())[class_index]
+        print(f"Prediction : {card_name}")
+
+root = Tk()
+root.title("Card Recognition")
+root.geometry("300x300")
+
+load_button = Button(root, text="Load Image", command=predict_image)
+load_button.pack()
+
+
+root.mainloop()
