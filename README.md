@@ -1,6 +1,6 @@
 # Card Recognition with Convolutional Neural Networks (CNN)
 
-<img src="./public/img.png" alt="Logo" width="100%">
+<img src="./public/img.png" alt="Logo" width=100%>
 
 ## Description
 
